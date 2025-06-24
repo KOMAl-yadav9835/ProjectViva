@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivasparc – Internship Opportunity</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1496307653780-42ee777d4833?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      position: relative;
+    }
+
+    /* Watermark logo */
+    .watermark-logo {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      opacity: 0.08;
+      z-index: 0;
+      width: 200px;
+      height: 200px;
+      background: url('https://media.licdn.com/dms/image/v2/D4E0BAQGhdUbRsH6cew/company-logo_200_200/company-logo_200_200/0/1737918066283/vivasparccom_logo?e=2147483647&v=beta&t=UHIz8fHSBDvEMv3dRsgLVQGk6iJlEbuZbii5gzRwL00') no-repeat center center;
+      background-size: contain;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 60px 40px;
+      border-radius: 16px;
+      max-width: 850px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #f9c74f;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #e0e0e0;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #f0c674;
+      font-size: 1.1rem;
+      margin: 20px 0 40px;
+    }
+
+    .cta-button {
+      background-color: #e91e63;
+      color: #fff;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #c2185b;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.4rem; }
+      p { font-size: 1rem; }
+      .cta-button { padding: 12px 24px; font-size: 0.95rem; }
+      .watermark-logo {
+        width: 120px;
+        height: 120px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Watermark logo -->
+  <div class="watermark-logo"></div>
+
+  <!-- Main Content -->
+  <div class="overlay">
+    <h1>Welcome to Vivasparc</h1>
+    <h2>Your Internship Journey Starts Here</h2>
+    <p>At <strong>Vivasparc</strong>, we provide students with the opportunity to:</p>
+    <p>🚀 <strong>Get the Opportunity</strong> – Start building your career with real-world internships.</p>
+    <p>🧠 <strong>Explore Your Knowledge</strong> – Learn new skills and grow in your field of interest.</p>
+    <p>📜 <strong>Get Certified</strong> – Receive professional certificates for your achievements.</p>
+
+    <p class="quote">“You’re not lost — you’re just exploring. And that’s where all great journeys begin.”</p>
+
+    <a class="cta-button" href="https://www.vivasparc.com/apply-now" target="_blank">Start Now</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    document.querySelector('.cta-button').addEventListener('click', () => {
+      console.log("User clicked: Start Now");
+    });
+  </script>
+</body>
+</html>
